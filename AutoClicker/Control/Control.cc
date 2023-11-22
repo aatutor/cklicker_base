@@ -2,9 +2,9 @@ namespace AutoClicker
 {
     template <class T>
     class Control: public Event {
-    protected:
-        T args = {};
     public:
+        T args = {};
+        
         Control (const T& vals): args(vals) {}
 
         void operator() (T vals) {

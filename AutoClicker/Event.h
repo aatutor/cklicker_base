@@ -2,9 +2,8 @@
 #ifndef EVENT_H
 #define EVENT_H
 
-#include "System/Console.cc"
+#include "Sys.h"
 
-#include "Event/KeysCombination.cc"
 #include "Event/Event.cc"
 #include "Event/EventPtr.cc"
 

@@ -9,9 +9,8 @@
             "command": "g++",
             "args": [
                 "-g",
-                // "-std=c++11",
-                "-std=gnu++17",
-                "main.cc",
+                "-std=c++11",
+                "example.cc",
                 "-o",
                 "autoclicker"
             ],

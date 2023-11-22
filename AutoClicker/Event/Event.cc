@@ -3,13 +3,16 @@
 
 namespace AutoClicker {
     class Event {
-        static const unsigned short DELAY_MS = 1;
+        static const unsigned short SYS_DELAY_MS = 1;
     protected:
-        virtual void Do() = 0;
 
+        virtual void Do() = 0;
     public:
+        unsigned int delay_ = 0;
+        
         void operator() () {
-            Sleep(DELAY_MS);
+            Sleep(SYS_DELAY_MS);
+            Sleep(delay_);
 
             bool pause = false;
             do {

@@ -9,5 +9,8 @@ namespace AutoClicker {
         void operator() () {
             (*ptr_)();
         }
+        Event* operator-> () {
+            return &*ptr_;
+        }
     };
 }
